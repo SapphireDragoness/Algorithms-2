@@ -8,13 +8,13 @@ class TestDynamicProgramming {
 	
 	@Test 
 	void testLongestCommonSubsequence() {
-		String res = DynamicProgramming.LongestCommonSubsequence("GACATGC", "ATCGAG");
+		String res1 = DynamicProgramming.LongestCommonSubsequence("AGCCGGATCGAGT", "TCAGTACGTTA");
+		String res2 = DynamicProgramming.LongestCommonSubsequence("casa", "oggetto");
+		String res3 = DynamicProgramming.LongestCommonSubsequence("", "");
 		
-		assertEquals(res, "ACAG");
-		
-		res = DynamicProgramming.LongestCommonSubsequence("", "");
-		
-		//assertEquals(res, "");
+		assertEquals(res1, "TCGAGT");
+		assertEquals(res2, "");
+		assertEquals(res3, "");
 	}
 
 	@Test
